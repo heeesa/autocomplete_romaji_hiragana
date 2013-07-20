@@ -14,20 +14,24 @@ inputタグに入力された全角文字を、半角のローマ字とひらが
 ============================
 
 1.ヘッダにソースを追加
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="autocomplete_romaji_hiragana.js"></script>
+
+  &lt;script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><br />
+  &lt;script src="autocomplete_romaji_hiragana.js"></script>
   
+  <br /><br /><br />
   
 2.type="text"のinputタグを追加
 
-  <input id="address" size="30" type="text" placeholder="ここに入力">
-  <input id="address_romaji" size="30" type="text">
-	<input id="address_hiragana" size="30" type="text">
+  &lt;input id="address" size="30" type="text" placeholder="ここに入力"><br />
+  &lt;input id="address_romaji" size="30" type="text"><br />
+  &lt;input id="address_hiragana" size="30" type="text">
+  
+  <br /><br /><br />
   
   
-3.
+3.<br />
   $('<入力補完してほしいid(classも可)>').autoComplete('<ローマ字出力してほしいinputタグのid>', '<ひらがな出力してほしいinputタグのid>');
-
+<br /><br />
   $('#address').autoComplete('#address_romaji', '#address_hiragana');
   
 =============================
