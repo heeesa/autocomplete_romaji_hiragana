@@ -30,9 +30,7 @@ $.fn.autoComplete = function(romaji, hiragana) {
   				//console.log(tmp_name)
   			}else{
   				var partner_name = $(this).val();
-  				//console.log('partner_name:'+partner_name)
   				var partner_append = partner_name.substr(tmp_num);
-  				//console.log('parner_append:'+partner_append);
   				var tmp = tmp_name + partner_append;
   				$(hiragana).val(tmp);
   				before_name = tmp;
@@ -58,7 +56,7 @@ function keycode_check(which){
 	if ((65 <= which && which <= 65 + 25)||(97 <= which && which <= 97 + 25)){
 			charcode = String.fromCharCode(which);
 		}else if (which == 229){
-			//console.log('日本語');
+			//日本語入力
 		}else{
 			charcode = ''
 		}
@@ -75,13 +73,6 @@ function hankaku_check(which){
 		charcode = ''
 	}
 }
-
-function check_field(){
-	var value_of_words = $('.search-query').val();
-	if (value_of_words != null){
-		$("#searchMeganeBtnHome").trigger('click');
-	}
-};
 
 function browser_check(){
 	var userAgent = window.navigator.userAgent.toLowerCase();
