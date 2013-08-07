@@ -36,5 +36,5 @@ inputタグに入力された全角文字を、半角のローマ字とひらが
   
 =============================
 Demoページ
-  http://plugin-demo.doublw.com/
+  http://doublw.com/plugin
 
